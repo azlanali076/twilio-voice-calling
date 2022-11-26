@@ -56,7 +56,7 @@
         var params = {
             // get the phone number to call from the DOM
             To: document.getElementById('number').value,
-            agent: 'Owais'
+            agent: '{{ env('TWILIO_IDENTITY') }}'
         };
 
         if (device) {
